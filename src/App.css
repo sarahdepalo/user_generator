@@ -1,17 +1,18 @@
+h1, h2, h3 {
+  color: rgba(54, 54, 54, 0.6);
+}
+
+p {
+  color: rgba(92, 92, 92, 0.6);
+}
+
 .App {
   text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +25,54 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.AllUsers, .SearchResults {
+  display:flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AllUsers h2 {
+  display: block;
+  width: 100%;
+}
+.AllUsers h3 {
+  color: #93a58a;
+}
+.IdentityDiv h3 {
+  color: #93a58a;
+}
+
+ button {
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  color: white;
+  background: #93a58a;
+  letter-spacing: 1.7px;
+}
+
+select {
+  display:block;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.userCard {
+  width: 250px;
+  padding: 30px;
+  border: 1.5px solid #f2f2f2;
+  margin: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.IdentityDiv {
+  width: 250px;
+  padding: 30px;
+  border: 1.5px solid #f2f2f2;
+  margin: 0 auto;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
