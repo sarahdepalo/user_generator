@@ -53,7 +53,7 @@ class UserCard extends React.Component {
                 )}
             <button type="button" onClick={this._fetchUsers}>Get a New Identity</button>
 
-            <div className="AllUsers">
+            <div className="AllUsers" data-testid="usersContainer">
                 <h2>Don't like those Indenties? Choose From One of These:</h2>
                 {allUsers.map((user) => 
                     <div className="userCard">
@@ -66,7 +66,7 @@ class UserCard extends React.Component {
                 
                 )}
             </div>
-            <button type="button" onClick={this._fetchAllUsers}>Generate Different Identities</button>
+            <button type="button" onClick={this._fetchAllUsers} data-testid="newUsersBtn">Generate Different Identities</button>
             </>
         )
     }
